@@ -1,0 +1,12 @@
+.carousel {
+    position: left !important;
+}
+
+.carousel .carousel-indicators li {
+    margin-top: 3px;
+    margin-bottom: 3px;
+} 
+
+.carousel-slider { 
+    width : 90%;
+}

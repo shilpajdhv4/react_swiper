@@ -58,9 +58,9 @@ function App() {
         thumbs = {{ swiper: thumbsSwiper}}
         tag="section" 
         wrapperTag="ul" 
-        navigation 
-        {...params}
-        // pagination={{ clickable: true }}
+        // navigation 
+        // {...params}
+        pagination={{ clickable: true }}
         spaceBetween={0}
         slidesPerView={1}
         >
@@ -72,11 +72,38 @@ function App() {
               />        
         </SwiperSlide>
         <SwiperSlide key={`slide-2`} tag="li">
-                  <img 
-                  src={`https://picsum.photos/id/2/500/300`}
-                // src="https://picsum.photos/id/1/500/300"
-                  alt={`Slide 2`}
-                />        
+            <Swiper
+              spaceBetween={0}
+              slidesPerView={1}
+              navigation
+              pagination={{ clickable: true }}
+              onSlideChange={() => console.log('slide change')}
+              onSwiper={(swiper) => console.log(swiper)}
+              >
+                  <SwiperSlide>
+                    <img 
+                      src={`https://picsum.photos/id/12/500/300`}
+                    // src="https://picsum.photos/id/1/500/300"
+                      alt={`Slide 12`}
+                    />   
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img 
+                      src={`https://picsum.photos/id/14/500/300`}
+                    // src="https://picsum.photos/id/1/500/300"
+                      alt={`Slide 14`}
+                    />   
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img 
+                      src={`https://picsum.photos/id/15/500/300`}
+                    // src="https://picsum.photos/id/1/500/300"
+                      alt={`Slide 15`}
+                    />   
+                  </SwiperSlide>
+                  <div class="swiper-pagination swiper-pagination-v"></div>
+            </Swiper>
+                       
         </SwiperSlide>
         <SwiperSlide key={`slide-3`} tag="li">
                   <img 

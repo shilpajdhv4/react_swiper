@@ -58,28 +58,29 @@ function App() {
         thumbs = {{ swiper: thumbsSwiper}}
         tag="section" 
         wrapperTag="ul" 
-        // navigation 
+        navigation 
         // {...params}
-        pagination={{ clickable: true }}
+        // pagination={{ clickable: true }}
         spaceBetween={0}
         slidesPerView={1}
         >
-        <SwiperSlide key={`slide-2`} tag="li">
-                <img 
-                 src={`https://picsum.photos/id/1/500/300`}
-              // src="https://picsum.photos/id/1/500/300"
-                alt={`Slide 1`}
-              />        
-        </SwiperSlide>
-        <SwiperSlide key={`slide-2`} tag="li">
-            <Swiper
+        <SwiperSlide key={`slide-1`} tag="li">
+          <Swiper
               spaceBetween={0}
               slidesPerView={1}
-              navigation
-              pagination={{ clickable: true }}
+              // navigation
+              {...params}
+              // pagination={{ clickable: true }}
               onSlideChange={() => console.log('slide change')}
               onSwiper={(swiper) => console.log(swiper)}
               >
+                  <SwiperSlide>
+                    <img 
+                      src={`https://picsum.photos/id/11/500/300`}
+                    // src="https://picsum.photos/id/1/500/300"
+                      alt={`Slide 11`}
+                    />   
+                  </SwiperSlide>
                   <SwiperSlide>
                     <img 
                       src={`https://picsum.photos/id/12/500/300`}
@@ -89,16 +90,43 @@ function App() {
                   </SwiperSlide>
                   <SwiperSlide>
                     <img 
-                      src={`https://picsum.photos/id/14/500/300`}
+                      src={`https://picsum.photos/id/13/500/300`}
                     // src="https://picsum.photos/id/1/500/300"
-                      alt={`Slide 14`}
+                      alt={`Slide 13`}
+                    />   
+                  </SwiperSlide>
+                  <div class="swiper-pagination swiper-pagination-v"></div>
+            </Swiper>   
+        </SwiperSlide>
+        <SwiperSlide key={`slide-2`} tag="li">
+            <Swiper
+              spaceBetween={0}
+              slidesPerView={1}
+              // navigation
+              {...params}
+              // pagination={{ clickable: true }}
+              onSlideChange={() => console.log('slide change')}
+              onSwiper={(swiper) => console.log(swiper)}
+              >
+                  <SwiperSlide>
+                    <img 
+                      src={`https://picsum.photos/id/21/500/300`}
+                    // src="https://picsum.photos/id/1/500/300"
+                      alt={`Slide 21`}
                     />   
                   </SwiperSlide>
                   <SwiperSlide>
                     <img 
-                      src={`https://picsum.photos/id/15/500/300`}
+                      src={`https://picsum.photos/id/22/500/300`}
                     // src="https://picsum.photos/id/1/500/300"
-                      alt={`Slide 15`}
+                      alt={`Slide 22`}
+                    />   
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img 
+                      src={`https://picsum.photos/id/23/500/300`}
+                    // src="https://picsum.photos/id/1/500/300"
+                      alt={`Slide 23`}
                     />   
                   </SwiperSlide>
                   <div class="swiper-pagination swiper-pagination-v"></div>
@@ -106,11 +134,38 @@ function App() {
                        
         </SwiperSlide>
         <SwiperSlide key={`slide-3`} tag="li">
-                  <img 
-                  src={`https://picsum.photos/id/3/500/300`}
-                // src="https://picsum.photos/id/1/500/300"
-                  alt={`Slide 3`}
-                />        
+            <Swiper
+              spaceBetween={0}
+              slidesPerView={1}
+              // navigation
+              {...params}
+              // pagination={{ clickable: true }}
+              onSlideChange={() => console.log('slide change')}
+              onSwiper={(swiper) => console.log(swiper)}
+              >
+                  <SwiperSlide>
+                    <img 
+                      src={`https://picsum.photos/id/31/500/300`}
+                    // src="https://picsum.photos/id/1/500/300"
+                      alt={`Slide 31`}
+                    />   
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img 
+                      src={`https://picsum.photos/id/32/500/300`}
+                    // src="https://picsum.photos/id/1/500/300"
+                      alt={`Slide 32`}
+                    />   
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img 
+                      src={`https://picsum.photos/id/33/500/300`}
+                    // src="https://picsum.photos/id/1/500/300"
+                      alt={`Slide 33`}
+                    />   
+                  </SwiperSlide>
+                  <div class="swiper-pagination swiper-pagination-v"></div>
+            </Swiper>   
         </SwiperSlide>
         
         <div class="swiper-pagination"></div>
